@@ -1,6 +1,6 @@
 
 export default function getTopLetter(str) {
-    // Change me!
+  // Change me!
 
-    return "";
+  return '';
 }

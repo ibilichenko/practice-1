@@ -1,10 +1,10 @@
 
 export default function getStats(data) {
-    // Change me!
+  // Change me!
 
-    return {
-        min: null,
-        max: null,
-        avg: null
-    };
+  return {
+    min: null,
+    max: null,
+    avg: null
+  };
 }

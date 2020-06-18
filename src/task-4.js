@@ -1,6 +1,6 @@
 
 export default function formatTime(seconds) {
-    // Change me!
+  // Change me!
 
-    return "";
+  return '';
 }

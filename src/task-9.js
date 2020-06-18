@@ -1,6 +1,6 @@
 
 export default function merge(data) {
-    // Change me!
+  // Change me!
 
-    return {};
+  return {};
 }

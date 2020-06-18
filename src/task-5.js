@@ -1,6 +1,6 @@
 
 export default function trim(text, maxLength) {
-    // Change me!
+  // Change me!
 
-    return "";
+  return '';
 }

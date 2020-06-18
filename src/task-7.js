@@ -1,6 +1,6 @@
 
 export default function unique(data) {
-    // Change me!
+  // Change me!
 
-    return [];
+  return [];
 }

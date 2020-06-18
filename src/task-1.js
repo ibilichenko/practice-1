@@ -1,6 +1,6 @@
 
 export default function isTriangle(a, b, c) {
-    // Change me!
+  // Change me!
 
-    return false;
+  return false;
 }
