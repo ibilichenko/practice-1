@@ -1,17 +1,19 @@
 
 export default function getTopLetter(str) {
-  let strMap = new Map();
+  const strMap = new Map();
   
-  for(let letter of str){
-      strMap.has(letter) ? strMap.set(letter,(strMap.get(letter)+1)):strMap.set(letter,1);
+  for (const letter of str) {
+    strMap.has(letter) ? strMap.set(letter, (strMap.get(letter) + 1)) : strMap.set(letter, 1);
   }
   
-  let maxCountOfRepetitions = 0, mostRepeatedLetter;
+  let maxCountOfRepetitions = 0;
+  let mostRepeatedLetter;
   
   strMap.forEach((value, key) => {
-      if(value > maxCountOfRepetitions){
-        maxCountOfRepetitions = value;
+    if (value > maxCountOfRepetitions) {
+      maxCountOfRepetitions = value;
       mostRepeatedLetter = key;
-  }})
+    }
+  })
   return mostRepeatedLetter;
-  }
+}
