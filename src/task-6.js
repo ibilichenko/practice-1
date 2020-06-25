@@ -1,6 +1,5 @@
 
 export default function getStats(data) {
-  // Change me!
   if (data.length!=0){
     return{
         max: Math.max(...data),

@@ -14,5 +14,4 @@ export default function getTopLetter(str) {
       mostRepeatedLetter = key;
   }})
   return mostRepeatedLetter;
-  
   }

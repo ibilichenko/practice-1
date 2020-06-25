@@ -9,6 +9,5 @@ export default function merge(data) {
       result[key].push(obj[key]);
     }
   }
-  
   return result;
 }

@@ -1,6 +1,5 @@
 
 export default function trim(text, maxLength) {
-
   if(maxLength <= 0){
       throw new RangeError('Max length must be a positive value');
   }
