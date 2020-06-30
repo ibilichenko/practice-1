@@ -1,10 +1,11 @@
 
 export default function getNthItem(a, n) {
   if (n === 0) return 0;
-  const series = [];
-  series.push(a);
+  let previous = a;
+  let current = a;
   for (let i = 1; i < n; i++) {
-    series[i] = a - 2 * series[i - 1];
+    current = a - 2 * previous;
+    previous = current;
   }
-  return series[n - 1];
+  return current;
 }

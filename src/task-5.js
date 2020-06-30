@@ -4,7 +4,7 @@ export default function trim(text, maxLength) {
     throw new RangeError('Max length must be a positive value');
   }
   if (text.length > maxLength) {
-    text = text.slice(0, maxLength - 1) + '…';
+    text = `${text.slice(0, maxLength - 1)}…`
   }
   return text;
 }
