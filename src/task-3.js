@@ -1,6 +1,6 @@
 
 export default function sumDigits(n) {
-  // Change me!
-
-  return 0;
+  return String(n).split('').reduce((accumulator, currentValue) => {
+    return +accumulator + +currentValue;
+  })
 }

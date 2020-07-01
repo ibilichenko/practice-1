@@ -1,6 +1,4 @@
 
 export default function isTriangle(a, b, c) {
-  // Change me!
-
-  return false;
+  return a + b > c && b + c > a && c + a > b
 }
