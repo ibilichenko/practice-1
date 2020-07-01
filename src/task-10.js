@@ -16,9 +16,10 @@ export default function convertToRoman(n) {
   }
 
   for (let i = 0; i < romanSymbols.length - 1; i++) {
-    if (romanSymbols[i].count * romanSymbols[i].value + romanSymbols[i + 1].count * romanSymbols[i + 1].value === 9 ||
-       romanSymbols[i].count * romanSymbols[i].value + romanSymbols[i + 1].count * romanSymbols[i + 1].value === 90 ||
-       romanSymbols[i].count * romanSymbols[i].value + romanSymbols[i + 1].count * romanSymbols[i + 1].value === 900) {
+    const sumOfTwoNeighborsSymbol = romanSymbols[i].count * romanSymbols[i].value + romanSymbols[i + 1].count * romanSymbols[i + 1].value
+    if (sumOfTwoNeighborsSymbol === 9 ||
+        sumOfTwoNeighborsSymbol === 90 ||
+        sumOfTwoNeighborsSymbol === 900) {
       romanSymbols[i + 1].count += (romanSymbols[i].count * romanSymbols[i].value / romanSymbols[i + 1].value);
       romanSymbols[i].count = 0;
       i++;
